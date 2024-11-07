@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
-import { LoginController } from './login.controller';
+// import { LoginController } from './login.controller';
+import { FacebookModule } from './facebook/facebook.module';
 
 @Module({
-  controllers: [LoginController],
-  exports: [LoginController],
+  controllers: [],
+  exports: [],
+  imports: [FacebookModule],
 })
 export class LoginModule {}
